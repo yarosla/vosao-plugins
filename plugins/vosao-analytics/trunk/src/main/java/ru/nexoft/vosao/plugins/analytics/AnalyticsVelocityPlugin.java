@@ -48,7 +48,6 @@ public class AnalyticsVelocityPlugin extends AbstractVelocityPlugin {
         topPages.add(pageEntity);
         if (--limit<=0) break;
       }
-      break;
     }
     return topPages;
   }

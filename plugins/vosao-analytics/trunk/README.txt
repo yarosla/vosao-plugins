@@ -18,7 +18,7 @@ Google Analytics plugin for Vosao CMS
 Every 3 hours the plugin will retrieve Google Analytics data for your site
 and store it in database.
 
-In page templates you can access page views data as foolows:
+In page templates you can access page views data as follows:
 
   $plugin.analytics.getPageViews($page.friendlyUrl)
     - returns the number of page views for last week
