@@ -2,6 +2,10 @@
 
 _(c) 2011, Yaroslav Stavnichiy, http://www.nexoft.ru _
 
+== Summary ==
+
+Google Analytics plugin provides page popularity rankings based on Google Analytics reports for your Vosao site. The plugin uses Google Analytics API to fetch page views counts for top site's pages.
+
 == 1. Setup ==
 
  * Upload and install plugin's WAR-file
