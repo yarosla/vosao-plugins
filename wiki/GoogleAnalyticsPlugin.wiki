@@ -12,7 +12,7 @@ _(c) 2011, Yaroslav Stavnichiy, http://www.nexoft.ru _
 
 Every 3 hours the plugin will retrieve Google Analytics data for your site and store it in database.
 
-In page templates you can access page views data as folows:
+In page templates you can access page views data as follows:
 
   `$plugin.analytics.getPageViews($page.friendlyUrl)`
     - returns the number of page views for last week
