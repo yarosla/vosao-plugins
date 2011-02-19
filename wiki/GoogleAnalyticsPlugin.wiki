@@ -12,17 +12,16 @@ _(c) 2011, Yaroslav Stavnichiy, http://www.nexoft.ru _
 
 Every 3 hours the plugin will retrieve Google Analytics data for your site and store it in database.
 
-In page templates you can access page views data as foolows:
+In page templates you can access page views data as folows:
 
-  $plugin.analytics.getPageViews($page.friendlyUrl)
+  `$plugin.analytics.getPageViews($page.friendlyUrl)`
     - returns the number of page views for last week
 
-  $plugin.analytics.topPages(10)
+  `$plugin.analytics.topPages(10)`
     - returns top 10 pages
 
-  $plugin.analytics.topPages("/blog/", 10)
-    - returns top 10 pages having url that starts with /blog/ prefix;
-      multiple prefixes could be listed separated by comma ','
+  `$plugin.analytics.topPages("/blog/", 10)`
+    - returns top 10 pages having url that starts with /blog/ prefix; multiple prefixes could be listed separated by comma ','
 
 == 3. Sample template script ==
 
