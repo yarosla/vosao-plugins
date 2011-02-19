@@ -19,7 +19,7 @@ Every 3 hours the plugin will retrieve Google Analytics data for your site and s
 In page templates you can access page views data as follows:
 
   `$plugin.analytics.getPageViews($page.friendlyUrl)`
-    - returns the number of page views for last week
+    - returns the number of page views for given page during last week
 
   `$plugin.analytics.topPages(10)`
     - returns top 10 pages
