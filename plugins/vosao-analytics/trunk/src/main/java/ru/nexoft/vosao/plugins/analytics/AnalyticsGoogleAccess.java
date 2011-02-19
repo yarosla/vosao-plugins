@@ -20,18 +20,6 @@ public class AnalyticsGoogleAccess {
   public static final String UTF8_ENCODING="utf-8";
   public static final String UTF8_APPLICATION_FORM_URLENCODED="application/x-www-form-urlencoded; charset=utf-8";
 
-  public static void main(String[] args) {
-    Map<String,Integer> pageViews=retrievePageViews("UA-21496769-2", "yml.shop.analytics@gmail.com", "yml-shop.ru", "2011-02-01", "2011-02-19", 10);
-    StringBuilder sb=new StringBuilder();
-    for (Map.Entry<String, Integer> entry : pageViews.entrySet()) {
-      sb.append(entry.getKey());
-      sb.append('\t');
-      sb.append(entry.getValue());
-      sb.append('\n');
-    }
-    System.out.println(sb);
-  }
-
   public static Map<String, Integer> retrievePageViews(String webPropertyId, String userEmail, String userPassword, String startDate, String endDate, int maxResults) {
     String authTokens=httpPost(AUTH_URL, new String[] {"accountType", "GOOGLE", "Email", userEmail,
         "Passwd", userPassword, "service", "analytics", "source", "vosao-analytics-plugin-1"}, null);
@@ -252,7 +240,7 @@ public class AnalyticsGoogleAccess {
 
   public static String trimToNull(String s) { String s1; return s==null || ((s1=s.trim()).length()==0)?null:s1; }
   public static String blankToNull(String s) { return s==null || (s.trim().length()==0)?null:s; }
-  public static String emptyToNull(String s) { return "".equals(s)?null:s; }
+  public static String emptyToNull(String s) { return s.length()==0?null:s; }
   public static String noNull(String s) { return s==null?"":s; }
   public static String noNull(String s, String val) { return s==null?val:s; }
   public static boolean isBlank(String s) { return (s==null||s.trim().length()==0); }

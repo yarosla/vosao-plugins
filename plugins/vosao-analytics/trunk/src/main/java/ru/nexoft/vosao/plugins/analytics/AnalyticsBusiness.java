@@ -48,7 +48,7 @@ public class AnalyticsBusiness {
       return null;
     }
 
-    Map<String,Integer> pageViews=AnalyticsGoogleAccess.retrievePageViews(webPropertyId, userEmail, userPassword, startDate, endDate, 100);
+    Map<String,Integer> pageViews=AnalyticsGoogleAccess.retrievePageViews(webPropertyId, userEmail, userPassword, startDate, endDate, 1000);
     if (pageViews.isEmpty()) {
       System.err.println("Google Analytics returned empty data set");
       return null;
