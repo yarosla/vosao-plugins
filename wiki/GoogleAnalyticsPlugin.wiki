@@ -1,6 +1,6 @@
 = Google Analytics plugin for Vosao CMS =
 
-_(c) 2011, Yaroslav Stavnichiy, http://www.nexoft.ru _
+_©2011, Yaroslav Stavnichiy, http://www.nexoft.ru _
 
 == Summary ==
 
