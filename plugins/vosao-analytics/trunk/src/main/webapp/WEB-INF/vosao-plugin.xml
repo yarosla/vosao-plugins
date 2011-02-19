@@ -1,0 +1,14 @@
+<vosao-plugin>
+    <name>analytics</name>
+    <title>Google Analytics</title>
+    <version>1.0</version>
+    <description>Google Analytics integration</description>
+    <website>www.nexoft.ru</website>
+    <config>
+        <param name="ga-user" title="$analytics.username" type="String" value="" />
+        <param name="ga-password" title="$analytics.password" type="String" value="" />
+    </config>
+    <entry-point-class>
+        ru.nexoft.vosao.plugins.analytics.AnalyticsEntryPoint
+    </entry-point-class>
+</vosao-plugin>
