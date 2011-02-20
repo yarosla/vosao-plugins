@@ -2,13 +2,15 @@
 
 _©2011, Yaroslav Stavnichiy, http://www.nexoft.ru _
 
+*[http://blog.nexoft.ru/blog/vosao-google-analytics-plugin Developer's Home Page]*
+
 == Summary ==
 
 Google Analytics plugin provides page popularity rankings based on Google Analytics reports for your Vosao site. The plugin uses Google Analytics API to fetch page views counts for top site's pages.
 
 == 1. Setup ==
 
- * Upload and install plugin's WAR-file
+ * Download and install plugin's [http://blog.nexoft.ru/blog/vosao-google-analytics-plugin WAR-file]
  * Go to site configuration and setup Google Analytics ID to enable page tracking
  * Go to plugins configuration, select Google Analytics plugin and fill in plugin's settings: Google Analytics user email & password. The password is stored as plain text, therefore we recommend registering special Google account with read-only access to your analytics just for this purpose.
 
